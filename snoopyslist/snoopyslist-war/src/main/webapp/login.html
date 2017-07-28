@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Log In</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+        <style>
+            body{
+                background-color: #ffcf5b;
+            }
+            .centered-form{
+                margin-top: 60px;
+            }
+
+            .centered-form .panel{
+                background: rgba(255, 255, 255, 0.8);
+                box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row centered-form">
+                <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h1 class="panel-title">Log In</h1>
+                        </div>
+                        <div class="panel-body">
+                            <form role="form" id="login-form" method="post">
+
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
+                                </div>
+                                <div>
+                                    Not Register? <a href="signup.html">Create an account</a>
+                                </div>
+
+                                <hr />
+
+                                <input type="submit" value="Login" class="btn btn-info btn-block">
+                                <input type="button" id="cancelButton" value="Cancel" class="btn btn-danger btn-info btn-block">
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div id="errorMessage" class="panel panel-default alert alert-danger" role="alert" style="display:none;">
+                        <strong>Invalid Login</strong><br> Your Email or Password is incorrect. Please try again!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="resources/js/cookieFunctions.js" charset="utf-8"></script>
+        <script src="resources/js/login.js"></script>
+
+    </body>
+</html>
+

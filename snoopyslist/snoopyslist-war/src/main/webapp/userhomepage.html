@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Theme Made By www.w3schools.com - No Copyright -->
+        <title>pet type</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./resources/css/style.css">
+
+    </head>
+
+    <!--<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="checkCookie()">-->
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="/snoopyslist"><img src="./resources/gfx/slLogo.png"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a href="./userhomepage.html">Welcome ! <span id="username"></span></a></li>
+                        <li>
+                            <button id="logout" type="button" class="btn btn-warning">Logout!</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron text-center">
+            <a href="createpost.html">
+                <button type="button" class="btn btn-default btn-lg btn-block">Make a Post</button>
+            </a>
+        </div>
+
+        <div class="container">
+            <div class="text-align: justify">
+                <!--Note: Tags where list of posts appear -->
+                <ul style="list-style-type: decimal" id="ul">
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- JS scripts -->
+        <script src="resources/js/cookieFunctions.js" charset="utf-8"></script>
+        <script src="resources/js/verifyAuth.js"></script>
+        <script src="resources/js/checkLogin.js" charset="utf-8"></script>
+        <script src="resources/js/app.js" charset="utf-8"></script>
+    </body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Snoopy's List</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./resources/css/style.css">
+    </head>
+
+
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/snoopyslist"><img src="./resources/gfx/slLogo.png"></a>
+                </div>
+
+
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                            <a class="navbar-brand" href="#myPage"><img src="./resources/gfx/slLogo.png"></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+        <!--Modal-->
+        <div class="jumbotron text-center">
+            <h2>Let Us Help You Find A Home for your Pet..</h2>
+
+            <form class="form-inline" id="searchBox">
+
+                <div class="form-group">
+                    <label for="animalType">Type: </label>
+                    <select name="animalType" id="animalType" class="form-control form-inline">
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="bird">Bird</option>
+                        <option value="rabbit">Rabbit</option>
+                        <option value="gerbil">Gerbil</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="snake">Snake</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location: </label>
+                    <input type="text" name="location" id="location" class="form-control form-inline" >
+                </div>
+                <div class="form-group">
+                    <label for="age">Age: </label>
+                    <select name="age" id="age" class="form-control form-inline">
+                    <option>Any</option>
+                    <option>Baby</option>
+                    <option>Young</option>
+                    <option>Adult</option>
+                    <option>Senior</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <label for="size">Size: </label>
+                    <select name="size" id="size" class="form-control form-inline">
+                    <option>Any</option>
+                    <option>Tiny</option>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+                </div>
+                <button type="button" class="btn btn-default" id="btnSearch">Search</button>
+            </form>
+        </div>
+
+        <!-- Container (Services Section) -->
+        <div id="services" class="container-fluid text-center">
+            <h2>PET ADOPTION</h2>
+            <br>
+
+            <div class="row slideanim">
+                <div class="col-sm-4">
+                    <a href="typegallery.html?animalType=dog">
+                        <img src="./resources/gfx/dog.jpg" class="img-thumbnail">
+                    </a>
+                    <h4>DOGS</h4>
+                </div>
+                <div class="col-sm-4">
+                    <a href="typegallery.html?animalType=cat">
+                        <img src="./resources/gfx/cat.jpg" class="img-thumbnail">
+                    </a>
+                    <h4>CATS</h4>
+                </div>
+                <div class="col-sm-4">
+                    <a href="typegallery.html?animalType=rabbit">
+                        <img src="./resources/gfx/rabbit.jpg" class="img-thumbnail">
+                    </a>
+                    <h4>RABBITS</h4>
+                </div>
+            </div>
+            <br><br>
+            <div class="row slideanim">
+                <div class="col-sm-4">
+                    <a href="typegallery.html?animalType=bird">
+                        <img src="./resources/gfx/birds.png" class="img-thumbnail">
+                    </a>
+                    <h4>BIRDS</h4>
+                </div>
+                <div class="col-sm-4">
+                    <a href="typegallery.html?animalType=reptile">
+                        <img src="./resources/gfx/reptile.png" class="img-thumbnail">
+                    </a>
+                    <h4>REPTILES</h4>
+                </div>
+                <div class="col-sm-4">
+                    <a href="typegallery.html?animalType=other">
+                        <img src="./resources/gfx/other.jpg" class="img-thumbnail">
+                    </a>
+                    <h4>OTHER</h4>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="bg-grey" class="container-fluid text-center">
+        </div>
+
+        <!-- Container (Portfolio Section) -->
+        <div id="portfolio" class="container-fluid text-center bg-grey">
+            <h2>What our customers say</h2>
+            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h4>"I found my bestfriend with Snoopy's List! Words cannot even explain how happy I am!"<br><span>Maya Pink, College Student</span></h4>
+                    </div>
+                    <div class="item">
+                        <h4>"I love Snoopy's List and I recommend it to all of my friends!!!"<br><span>Kevin Phanthe, CPA</span></h4>
+                    </div>
+                    <div class="item">
+                        <h4>"Through Snoopy's list, it made my pet adoption so much easier!"<br><span>Pauline Smith, Actor</span></h4>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Container (Pricing Section) -->
+        <div id="pricing" class="container-fluid">
+            <div class="text-center">
+                <h2>Account Type</h2>
+                <h4>Choose an account that works for you</h4>
+            </div>
+            <div class="row slideanim">
+                <div class="col-sm-6 col-xs-12">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <h1>Individual</h1>
+                        </div>
+                        <div class="panel-footer">
+                            <h3>FREE</h3>
+                            <button class="btn btn-lg">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <h1>Shelter</h1>
+                        </div>
+                        <div class="panel-footer">
+                            <h3>FREE</h3>
+                            <button class="btn btn-lg">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid text-center">
+            <a href="#myPage" title="To Top">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+        </footer>
+
+        <script src="resources/js/cookieFunctions.js" charset="utf-8"></script>
+        <script src="resources/js/checkLogin.js"></script>
+        <script src="resources/js/index.js"></script>
+        <script src="./resources/js/httpJSON.js"></script>
+        <script src="./resources/js/app.js"></script>
+
+    </body>
+
+
+</html>

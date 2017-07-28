@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Theme Made By www.w3schools.com - No Copyright -->
+        <title>createpost</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./resources/css/style.css">
+    </head>
+
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+                    <a class="navbar-brand" href="/snoopyslist"><img src="./resources/gfx/slLogo.png"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="./userhomepage.html">Welcome ! <span id="username"></span></a></li>
+                        <li>
+                            <button id="logout" type="button" class="btn btn-warning">Logout!</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron text-center">
+            <h1>Create a Post</h1>
+        </div>
+
+        <div class="container text-align">
+
+            <img src="http://cdn.litlepups.net/2016/04/13/home-kittens-wallpaper-the-softest-baby-kitten-ever.jpg" class="reimage img-response img-rounded pull-right">
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/02/d7/01/02d701b77a984a1b6cf970e6eb0468e1.jpg" class="reimage img-response img-rounded pull-left pull-down">
+
+            <div class="center_div">
+                <form>
+                    <div class="input-group">
+                        Title of post: <input type="string" id="title" class="form-control" size="50" name="petname" pattern="[a-zA-Z\s]+" required autofocus>
+                    </div>
+
+                    <div class="input-group">
+                        Pet Name: <input type="string" id="animalName" class="form-control" size="50" name="petname" pattern="[a-zA-Z\s]+" required autofocus>
+                    </div>
+                    <br>
+                    <div class="form-inline">
+                    Type:
+                        <div class="form-group">
+                            <select name="type" id="animalType">
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="bird">Bird</option>
+                                <option value="rabbit">Rabbit</option>
+                                <option value="gerbil">Gerbil</option>
+                                <option value="hamster">Hamster</option>
+                                <option value="snake">Snake</option>
+                            </select>
+                        </div>
+                    Size:
+                        <div class="form-group">
+                            <select name="size" id="size">
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                                <option value="xlarge">XLarge</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <br>
+                    Gender:
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="gender" value="male" checked> Male
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="gender" value="female">Female
+                            </label>
+                        </div>
+                    <div class="input-group">
+                        Age: <input type="number" id="age" class="form-control" size="50" name="age" required>
+                    </div>
+
+                    <div class="input-group">
+                        Address: <input type="string" id="address" class="form-control" size="50" name="petname" pattern="[a-zA-Z\s]+" placeholder="Ex: 1111 Dogtown St." required autofocus>
+                    </div>
+                    <div class="input-group">
+                        City: <input type="string" id="city" class="form-control" size="50" name="petname" pattern="[a-zA-Z\s]+" placeholder="Fullerton" required autofocus>
+                    </div>
+                    <div class="input-group">
+                        ZipCode: <input type="string" id="zipCode" class="form-control" size="50" name="petname" pattern="[a-zA-Z\s]+" placeholder="92831" required autofocus>
+                    </div>
+                    <div class="input-group">
+                        Description: <input type="string" id="description" class="form-control" size="50" name="details" placeholder="Ex: Breed, habits, etc.">
+                    </div>
+                    <br>Photo of pet:
+                    <div class="input-group">
+                        <form id="uploadForm" enctype="multipart/form-data" method="post">
+                            <input type="file" id="inputFile" name="file" size="45" accept="Image/*">
+                        </form>
+                    </div>
+                    <br>
+                    <div class="input-group-btn">
+                        <button type="button" id="submitButton" class="btn btn-warning">Post!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- JS scripts -->
+        <script src="resources/js/cookieFunctions.js" charset="utf-8"></script>
+        <script src="resources/js/verifyAuth.js" charset="utf-8"></script>
+        <script src="resources/js/checkLogin.js" charset="utf-8"></script>
+        <script src="resources/js/httpJSON.js" charset="utf-8"></script>
+        <script src="resources/js/app.js" charset="utf-8"></script>
+        <script src="resources/js/createPost.js" charset="urf-8"></script>
+
+    </body>
+
+</html>

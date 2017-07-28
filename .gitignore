@@ -1,0 +1,9 @@
+.idea/
+*/.idea
+snoopyslist/.idea/*
+snoopyslist/snoopyslist-war/target/
+snoopyslist/snoopyslist-war/src/main/webapp/upload.html
+snoopyslist/.idea/artifacts/snoopyslist_war_war_exploded.xmls
+snoopyslist/.idea
+*/DS_Store
+snoopyslist/.idea/workspace.xml
